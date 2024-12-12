@@ -21,18 +21,21 @@
         display: block;
       }
 
+      h1 {
+        font-family: "Racing Sans One", sans-serif;
+      }
+      
       body {
         color: #666666;
         background-color: #f1f1f1;
         background-position: center;
-        font-family: "Roboto", Times, serif;
+        font-family: "Didact Gothic", sans-serif;
         line-height: 1.4em;
         margin: 0px;
       }
       
       #nav {
         height: 100px;
-        border: 1px solid black;
       }
       
       #nav img {
@@ -57,7 +60,6 @@
       #nav ul li a {
         display: block;
         color: #07090d;
-        font-family: "Didact Gothic", sans-serif;
         text-align: center;
         padding: 5px;
         text-decoration: none;
@@ -72,18 +74,31 @@
       }
       
       #banner {
+        margin: 0px;
+        padding: 0px;
         text-align: left;
+        border: 1px solid red;
+        position: relative;
       }
       
       #banner img {
         width: 100%;
       }
-
-      h1 {
-        text-indent: -9999px;
-        width: 940px;
-        height: 130px;
-        margin: 0px;
+      
+      #banner h1 {
+        font-size: 50px;
+        position: absolute;
+        top: 70px;
+        left: 40px;
+        color: #f1f1f1;
+      }
+      
+      #banner p {
+        position: absolute;
+        top: 150px;
+        left: 40px;
+        width: 260px;
+        color: #f1f1f1;
       }
 
       #footer {
@@ -148,6 +163,13 @@
         <li><a href="members.html">Kostornia</a></li>
         <li><a href="connect.html">Scherbakova</a></li>
       </ul>
+    </div>
+    <div id="banner">
+      <img src="SashaAnnaAlena.jpg" alt="Sasha, Anna, and Alena">
+      <h1>WELCOME</h1>
+      <p>
+        This site is dedicated to three powerhouse Russian figure skaters under Coach Eteri Tutberidze.<br><br>Anna Scherbakova, Alena Kostornaia, and Alexandra Trusova—also known as 3A,Triple A, or the Russian Troika—have dominated ladies figure skating since 2018.
+      </p>
     </div>
   </body>
 </html>
