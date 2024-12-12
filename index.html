@@ -7,13 +7,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Racing+Sans+One&family=Road+Rage&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Racing+Sans+One&family=Road+Rage&display=swap" rel="stylesheet">
+
     <style>
-      #header,
       .courses,
       #footer,
       #sidebar,
       #nav,
       .article,
+      #banner,
       figure,
       figcaption {
         display: block;
@@ -21,47 +23,60 @@
 
       body {
         color: #666666;
-        background-color: #fafafa;
+        background-color: #f1f1f1;
         background-position: center;
         font-family: "Roboto", Times, serif;
         line-height: 1.4em;
         margin: 0px;
       }
-
-      .wrapper {
-        width: 940px;
-        margin: 20px auto 20px auto;
-        border: 2px solid #000000;
-        background-color: #ffffff;
+      
+      #nav {
+        height: 100px;
+        border: 1px solid black;
       }
-
-      #header {
-        height: 160px;
-        background-image: url("https://i.imgur.com/4rcWA3C.jpg");
+      
+      #nav img {
+        margin: 0px;
+        height: 30px;
+        padding: 35px 40px;
       }
       
       #nav ul {
         list-style-type: none;
         margin: 0;
-        padding: 0;
+        padding-right: 20;
         overflow: hidden;
-        background-color: Gray;
+        float: right;
       }
       
-      li {
+      #nav ul li {
         float: left;
+        padding: 35px 20px;
       }
       
-      li a {
+      #nav ul li a {
         display: block;
-        color: white;
+        color: #07090d;
+        font-family: "Didact Gothic", sans-serif;
         text-align: center;
-        padding: 5px 15px;
+        padding: 5px;
         text-decoration: none;
       }
       
-      li a:hover {
-        background-color: #9ec3ff;
+      #nav ul li a:hover {
+        color: #9197ae;
+      }
+      
+      #nav ul li a:active {
+        color: #dd0426;
+      }
+      
+      #banner {
+        text-align: left;
+      }
+      
+      #banner img {
+        width: 100%;
       }
 
       h1 {
@@ -90,10 +105,6 @@
         clear: both;
         overflow: auto;
         width: 100%;
-      }
-
-      .hgroup {
-        margin-top: 40px;
       }
 
       figure {
@@ -129,61 +140,14 @@
 
   </head>
   <body>
-    <div class="wrapper">
-      <div id="header">
-        <h1>Yoko's Kitchen</h1>
-        <div id="nav">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Classes</a></li>
-            <li><a href="/">Catering</a></li>
-            <li><a href="/">About</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="courses">
-        <div class="article">
-          <figure>
-            <img src="https://i.imgur.com/GaC5TSH.jpg" alt="Bok Choi">
-            <figcaption>Bok Choi</figcaption>
-          </figure>
-          <div class="hgroup">
-            <h2>Japanese Vegetarian</h2>
-            <h3>Five week course in London</h3>
-          </div>
-          <p>A five week introduction to traditional Japanese vegetarian meals, tefaching you a selection of rice and noodle dishes.</p>
-        </div>
-        <div class="article">
-          <figure>
-            <img src="https://i.imgur.com/dd27k4P.jpg" alt="Teriyaki sauce">
-            <figcaption>Teriyaki Sauce</figcaption>
-          </figure>
-          <div class="hgroup">
-            <h2>Sauces Masterclass</h2>
-            <h3>One day workshop</h3>
-          </div>
-          <p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
-        </div>
-      </div>
-      <div id="sidebar">
-        <div class="popular-recipes">
-          <h2>Popular Recipes</h2>
-          Yakitori (grilled chicken)
-          Tsukune (minced chicken patties)
-          Okonomiyaki (savory pancakes)
-          Mizutaki (chicken stew)
-        </div>
-        <div class="contact-details">
-          <h2>Contact</h2>
-          <p>Yoko's Kitchen<br>
-            27 Redchurch Street<br>
-            Shoreditch<br>
-            London E2 7DP</p>
-        </div>
-      </div>
-      <div id="footer">
-        &copy; 2024 Yoko's Kitchen
-      </div>
+    <div id="nav">
+      <img src="triple.png" alt="TripleA Logo">
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="about.html">Trusova</a></li>
+        <li><a href="members.html">Kostornia</a></li>
+        <li><a href="connect.html">Scherbakova</a></li>
+      </ul>
     </div>
   </body>
 </html>
