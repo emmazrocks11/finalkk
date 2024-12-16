@@ -10,15 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Racing+Sans+One&family=Road+Rage&display=swap" rel="stylesheet">
 
     <style>
-      .courses,
-      #footer,
-      #sidebar,
       #nav,
       .article,
       #banner,
-      #section1,
-      figure,
-      figcaption {
+      #section1 {
         display: block;
       }
 
@@ -47,6 +42,114 @@
         font-size: 18px;
         line-height: 1.4em;
         margin: 0px;
+      }
+      
+      .flex-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      #section1 {
+        text-align: center;
+      }
+      
+      #section1 h1 {
+        margin-top: 100px;
+        color: #800a12;
+      }
+      
+      #section1 h2 {
+        margin-top: 50px;
+        color: #9197ae
+      }
+      
+      #section1 div {
+        margin: auto;
+        width: 50%;
+      }
+      
+      #section1 p.bottom {
+        text-align: left;
+        padding-bottom: 90px;
+      }
+      
+      #section3 {
+        background-color: #273043;
+        height: 800px;
+      }
+      
+      #section3 h1 {
+        color: #f1f1f1;
+        padding: 0px 40px;
+        padding-top: 60px;
+      }
+      
+      .columnI {
+        flex: 25%;
+        max-width: 33.33%;
+        padding: 0px 40px;
+      }
+      
+      #section3 a {
+        display: block;
+        text-align: center;
+        padding-top: 40px;
+        font-family: "Didact Gothic", sans-serif;
+        font-size: 30px;
+        color: #f1f1f1;
+        text-decoration: none;
+      }
+      
+      .columnIMid {
+        flex: 25%;
+        max-width: 33.33%;
+        padding: 0px;
+      }
+
+      .columnI img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+      
+      .columnIMid img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+      
+      #section3 a:hover {
+        color: #9197ae;
+        text-decoration: underline;
+      }
+      
+      #banner {
+        margin: 0px;
+        padding: 0px;
+        text-align: left;
+        position: relative;
+      }
+      
+      #banner img {
+        width: 100%;
+      }
+      
+      #banner div {
+        position: absolute;
+        top: 50%;
+        left: 40px;
+        transform: translate(0%, -150%);
+      }
+      
+      #banner div h1 {
+        color: #f1f1f1;
+      }
+      
+      #banner h1 + p {
+        position: absolute;
+        top: 107px;
+        width: 380px;
+        color: #f1f1f1;
       }
       
       #nav {
@@ -87,96 +190,17 @@
       #nav ul li a:active {
         color: #dd0426;
       }
-      
-      #banner {
-        margin: 0px;
-        padding: 0px;
-        text-align: left;
-        position: relative;
-      }
-      
-      #banner img {
-        width: 100%;
-      }
-      
-      #banner div {
-        position: absolute;
-        top: 50%;
-        left: 40px;
-        transform: translate(0%, -150%);
-      }
-      
-      #banner div h1 {
-        color: #f1f1f1;
-      }
-      
-      #banner h1 + p {
-        position: absolute;
-        top: 107px;
-        width: 380px;
-        color: #f1f1f1;
-      }
-
-      #footer {
-        clear: both;
-        color: #ffffff;
-        background-color: #aeaca8;
-        height: 30px;
-        font-size: 80%;
-        padding: 7px 0px 0px 20px;
-      }
-
-      #section1 {
-        text-align: center;
-      }
-      
-      #section1 h1 {
-        margin-top: 100px;
-        color: #800a12;
-      }
-      
-      #section1 h2 {
-        margin-top: 50px;
-        color: #9197ae
-      }
-      
-      #section1 div {
-        margin: auto;
-        width: 50%;
-      }
-      
-      #section1 p {
-        text-align: left;
-      }
-
-      figure {
-        float: left;
-        width: 290px;
-        height: 220px;
-        padding: 5px;
-        margin: 20px;
-        border: 1px solid #eeeeee;
-      }
-
-      figcaption {
-        font-size: 90%;
-        text-align: left;
-        font-weight: 300;
-        font-style: normal;
-      }
-
-      
     </style>
 
   </head>
   <body>
     <div id="nav">
-      <img src="triple.png" alt="TripleA Logo">
+      <a href="https://emmazrocks11.github.io/tripleA-home/">
+        <img src="triple.png" alt="TripleA Logo"></a>
       <ul>
-        <li><a href="index.html">About</a></li>
-        <li><a href="about.html">Trusova</a></li>
-        <li><a href="members.html">Kostornia</a></li>
-        <li><a href="connect.html">Scherbakova</a></li>
+        <li><a href="https://emmazrocks11.github.io/sasha-trusova/">Trusova</a></li>
+        <li><a href="https://emmazrocks11.github.io/alena-kostornaia/">Kostornia</a></li>
+        <li><a href="https://emmazrocks11.github.io/anna-shcherbakova/">Shcherbakova</a></li>
       </ul>
     </div>
     <div id="banner">
@@ -195,10 +219,27 @@
         <p>
           <i>NOUN</i>
         </p>
-        <p>
+        <p class="bottom">
           1: a Russian vehicle drawn by three horses abreast also : a team for such a vehicle<br>2: a group of three especially : an administrative or ruling body of three
         </p>
       </div>
     </div>
+    <div id="section3">
+      <h1>Meet Triple A</h1>
+      <div class="flex-container">
+        <div class="columnI">
+          <img src="sasha123.jpg" alt="Alexandra Trusova">
+          <a href="https://emmazrocks11.github.io/alexandra-trusova/">Alexandra Trusova</a>
+        </div>
+        <div class="columnIMid">
+          <img src="alena123.jpg" alt="Alena Kostornaia">
+          <a href="https://emmazrocks11.github.io/alena-kostornaia/">Alena Kostornaia</a>
+        </div>
+        <div class="columnI">
+          <img src="anna123.jpg" alt="Anna Shcherbakova/">
+          <a href="https://emmazrocks11.github.io/anna-shcherbakova/">Anna Shcherbakova</a>
+        </div>
+      </div>
+    </div>
   </body>
-</html>
+</html> 
